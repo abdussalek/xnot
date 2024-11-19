@@ -4,12 +4,12 @@ import { getAuth, setPersistence, browserLocalPersistence } from 'firebase/auth'
 
 //* Add the Web App's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAWzrPJNtwjvrrkjM7vxsKDDH2d-SZq-k4",
-  authDomain: "adsjobtoken-3f26a.firebaseapp.com",
-  projectId: "adsjobtoken-3f26a",
-  storageBucket: "adsjobtoken-3f26a.firebasestorage.app",
-  messagingSenderId: "631952512124",
-  appId: "1:631952512124:web:9451758e188cef58cc65f9",
+  apiKey: "ssss",
+  authDomain: "ssss",
+  projectId: "ssss",
+  storageBucket: "sssss",
+  messagingSenderId: "ssss",
+  appId: "sssss",
   measurementId: "G-N2P2DNN0BE",
 };
 
