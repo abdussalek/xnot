@@ -22,23 +22,8 @@ const Ref = () => {
   }
 
   const copyToClipboard = () => {
-  const reflink = `https://t.me/AlphaGhost_Bot?start=r${id}
-$GHOST tokens mining is live! Two is better than one! Join my squad, and let's double the fun (and earnings 🤑)! $GHOST Power Tap! 🚀`;
-
-  // Use the Clipboard API to copy text
-  navigator.clipboard
-    .writeText(reflink)
-    .then(() => {
-      console.log('Referral link copied to clipboard!');
-      // Optional: Provide user feedback
-      alert('Referral link copied to clipboard!');
-    })
-    .catch((err) => {
-      console.error('Failed to copy referral link:', err);
-      // Optional: Provide user feedback in case of failure
-      alert('Failed to copy referral link. Please try again.');
-    });
-};
+    // eslint-disable-next-line
+    const reflink = `https://t.me/AlphaGhost_Bot?start=r${id}\n\$GHOST tokens mining is live! Two is better than one!  Join my squad, and let\'s double the fun (and earnings 🤑)! $GHOST Power Tap! 🚀`;
 
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard
@@ -79,10 +64,10 @@ $GHOST tokens mining is live! Two is better than one! Join my squad, and let's d
 
   const handleShare = async () => {
     const shareData = {
-      title: "Mine $Ads tokens now!",
+      title: "Mine $BLEGGS tokens now!",
       // eslint-disable-next-line
-      url: `https://t.me/AlphaAds_Bot?start=r${id}\n\ `, // Replace with your link
-      text: "$Ads tokens mining is live! Two is better than one!  Join my squad, and let's double the fun (and earnings 🤑)! $Ads Power Tap! 🚀",
+      url: `https://t.me/AlphaGhost_Bot?start=r${id}\n\ `, // Replace with your link
+      text: "$GHOST tokens mining is live! Two is better than one!  Join my squad, and let's double the fun (and earnings 🤑)! $GHOST Power Tap! 🚀",
     };
 
     if (navigator.share) {
@@ -100,7 +85,7 @@ $GHOST tokens mining is live! Two is better than one! Join my squad, and let's d
   const fallbackShare = (shareData) => {
     const encodedText = encodeURIComponent(
       // eslint-disable-next-line
-      `${shareData.url} \n\$Ads tokens mining is live! Two is better than one!  Join my squad, and let\'s double the fun (and earnings 🤑)! $Ads Power Tap! 🚀`
+      `${shareData.url} \n\$GHOST tokens mining is live! Two is better than one!  Join my squad, and let\'s double the fun (and earnings 🤑)! $GHOST Power Tap! 🚀`
     );
     const encodedUrl = encodeURIComponent(shareData.url);
 
@@ -199,7 +184,7 @@ $GHOST tokens mining is live! Two is better than one! Join my squad, and let's d
           <div className="w-full pt-3 justify-center flex-col space-y-3 px-5">
             <div className="w-full flex justify-center">
               <h1 className="font-semibold text-[28px] text-[#ffffffe0] pb-1 text-center">
-                Invite friends <br/>& get more $Ads
+                Invite friends <br/>& get more $GHOST
               </h1>
             </div>
 
@@ -269,7 +254,7 @@ $GHOST tokens mining is live! Two is better than one! Join my squad, and let's d
                 className="small-text2 font-semibold relative py-2 px-3 text-primary flex items-center space-x-2 text-[14px] text rounded-[6px]"
               >
              <span className="">
-                {refBonus} $Ads
+                {refBonus} $GHOST
                 </span>  
                 <IoInformationCircle onClick={() => setInfo(true)} size={14} className="text-gray-400"/>
 
