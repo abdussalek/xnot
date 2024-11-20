@@ -22,8 +22,23 @@ const Ref = () => {
   }
 
   const copyToClipboard = () => {
-    // eslint-disable-next-line
-    const reflink = `https://t.me/adsjobtoken_bot?start=r${id}\n\$Ads tokens mining is live! Two is better than one!  Join my squad, and let\'s double the fun (and earnings 🤑)! $Ads Power Tap! 🚀`;
+  const reflink = `https://t.me/AlphaGhost_Bot?start=r${id}
+$GHOST tokens mining is live! Two is better than one! Join my squad, and let's double the fun (and earnings 🤑)! $GHOST Power Tap! 🚀`;
+
+  // Use the Clipboard API to copy text
+  navigator.clipboard
+    .writeText(reflink)
+    .then(() => {
+      console.log('Referral link copied to clipboard!');
+      // Optional: Provide user feedback
+      alert('Referral link copied to clipboard!');
+    })
+    .catch((err) => {
+      console.error('Failed to copy referral link:', err);
+      // Optional: Provide user feedback in case of failure
+      alert('Failed to copy referral link. Please try again.');
+    });
+};
 
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard
